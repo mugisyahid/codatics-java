@@ -1,26 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
 
     <groupId>com.codatics</groupId>
     <artifactId>codatics</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <description>Parent build for backed server</description>
+
     <modules>
         <module>common</module>
+        <module>service-registration</module>
     </modules>
+
+
 
     <properties>
 
+        <spring-boot-starter-parent>1.5.4.RELEASE</spring-boot-starter-parent>
+
         <springweb.version>1.5.2.RELEASE</springweb.version>
 
+
+        <!-- service registry-->
+        <spring-cloud-starter-eureka-server>1.3.1.RELEASE</spring-cloud-starter-eureka-server>
+        <spring-boot-starter-test>1.5.4.RELEASE</spring-boot-starter-test>
+
     </properties>
-
-
-
 
     <profiles>
 
@@ -38,15 +47,5 @@
     </profiles>
 
 
-<dependencies>
-
-    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-        <version>${springweb.version}</version>
-    </dependency>
-
-</dependencies>
 
 </project>
