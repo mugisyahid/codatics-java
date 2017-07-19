@@ -6,10 +6,9 @@
 package com.codatics.common.service;
 
 /**
- *
  * @author ligar.syahid
- *
- * handling media
+ *         <p>
+ *         handling media
  */
 public interface MediaDataService {
 

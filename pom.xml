@@ -14,8 +14,8 @@
     <modules>
         <module>common</module>
         <module>service-registration</module>
+        <module>service-sql</module>
     </modules>
-
 
 
     <properties>
@@ -45,7 +45,6 @@
 
 
     </profiles>
-
 
 
 </project>

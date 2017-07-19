@@ -6,7 +6,6 @@
 package com.codatics.common.enumerate;
 
 /**
- *
  * @author ligar.syahid
  */
 public enum ApprovalStatus {
@@ -14,5 +13,5 @@ public enum ApprovalStatus {
     WAIT_FOR_APPROVAL,
     REJECTED,
     APPROVED,
-    STOP;
+    STOP
 }

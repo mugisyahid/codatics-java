@@ -6,11 +6,10 @@
 package com.codatics.common.state;
 
 /**
- *
  * @author ligar.syahid
  */
 public enum ActiveStatus {
 
     ACTIVE,
-    INACTIVE;
+    INACTIVE
 }

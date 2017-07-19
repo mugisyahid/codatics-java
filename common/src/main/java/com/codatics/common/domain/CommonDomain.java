@@ -7,25 +7,24 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- *
  * @author ligar.syahid
  */
 public class CommonDomain implements Serializable {
 
     /**
-	 * 
-	 */
-	private static final long serialVersionUID = 6340616151777267244L;
-	private int id;
-    protected String createdBy;
-    protected Date createdTime;
-    protected String lastUpdatedBy;
-    protected Date lastUpdatedTime;
-    protected String lastApprovedBy;
-    protected Date lastApprovedTime;
-    protected DeleteStatus deleteStatus = DeleteStatus.NOT_DELETED;
-    protected ActiveStatus activeStatus = ActiveStatus.ACTIVE;
-    protected boolean rejected;
+     *
+     */
+    private static final long serialVersionUID = 6340616151777267244L;
+    private String createdBy;
+    private Date createdTime;
+    private String lastUpdatedBy;
+    private Date lastUpdatedTime;
+    private String lastApprovedBy;
+    private Date lastApprovedTime;
+    private DeleteStatus deleteStatus = DeleteStatus.NOT_DELETED;
+    private ActiveStatus activeStatus = ActiveStatus.ACTIVE;
+    private boolean rejected;
+    private int id;
 
     public int getId() {
         return id;
@@ -106,6 +105,6 @@ public class CommonDomain implements Serializable {
     public void setRejected(boolean rejected) {
         this.rejected = rejected;
     }
-    
-    
+
+
 }

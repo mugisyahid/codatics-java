@@ -17,10 +17,10 @@ import static org.assertj.core.api.BDDAssertions.then;
 public class ServiceRegistrationAppTest {
 
     @LocalServerPort
-    private int port;
+    private final int port;
 
     @Autowired
-    private TestRestTemplate testRestTemplate;
+    private final TestRestTemplate testRestTemplate;
 
     @Test
     public void shouldStartEurekaServer() {
