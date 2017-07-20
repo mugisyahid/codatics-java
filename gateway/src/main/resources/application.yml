@@ -1,0 +1,33 @@
+# Spring properties
+spring:
+  application:
+     name: codatics-gateway  # Service registers under this name
+# HTTP Server
+server:
+  port: 1113   # HTTP (Tomcat) port
+# Discovery Server Access
+#  1. DEV ONLY: Reduce the lease renewal interval to speed up registration
+#  2. Define URL of registration server (defaultZone)
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1112/eureka/
+          
+logging:
+  level:
+    org.springframework.security: DEBUG
+security:
+  sessions: ALWAYS
+zuul:
+  routes:
+    ui:
+      url: http://localhost:1116
+      sensitive-headers:
+    accountadmin:
+      url: http://localhost:1115
+      sensitive-headers:
+    accountdb:
+      url: http://localhost:1114
+      sensitive-headers:
+   
+    

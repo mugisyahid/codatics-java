@@ -6,6 +6,7 @@
 package com.codatics.common.service;
 
 /**
+ *
  * @author ligar.syahid
  */
 public interface DataBaseService {

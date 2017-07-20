@@ -8,5 +8,5 @@ public enum ParameterDataType {
     DATE,
     TIME,
     DATETIME,
-    BOOLEAN
+    BOOLEAN;
 }

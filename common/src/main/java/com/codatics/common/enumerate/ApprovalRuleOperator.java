@@ -7,5 +7,5 @@ public enum ApprovalRuleOperator {
     LESS_THAN_EQUAL,
     EQUAL,
     GREATER_THAN,
-    GREATER_THAN_EQUAL
+    GREATER_THAN_EQUAL;
 }

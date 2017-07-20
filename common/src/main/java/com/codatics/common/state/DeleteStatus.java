@@ -6,8 +6,9 @@
 package com.codatics.common.state;
 
 /**
+ *
  * @author ligar.syahid
  */
 public enum DeleteStatus {
-    DELETED, NOT_DELETED
+    DELETED, NOT_DELETED;
 }
